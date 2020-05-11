@@ -44,3 +44,16 @@ h1, h2, h3, h4 {
 .post h2 a, .post h1 a:visited {
     color: #000000;
 }
+
+#wrapper {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  submit {
+    height: 20px;
+    width: 100px;
+  }
+  
