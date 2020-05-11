@@ -14,7 +14,6 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -42,7 +41,7 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
 ]
 
-CKEDITOR_UPLOAD_PATH = os.path.join(THIS_FOLDER, 'uploads')
+CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'uploads')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -123,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(THIS_FOLDER, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(THIS_FOLDER, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
