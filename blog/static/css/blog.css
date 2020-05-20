@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #116466;
+    background-color: #22223b;
     margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
@@ -21,6 +21,10 @@
     align-items: left;
 }
 
+.card {
+    background-color: #e5e5e5;
+}
+
 h1, h2, h3 {
     font-family: 'Montserrat';
     color: #610303b0;
@@ -28,7 +32,7 @@ h1, h2, h3 {
 
 h4 {
     font-family: 'Montserrat';
-    color: #ffffffb0;
+    color: #ffffff;
 }
 
 .date {
@@ -83,16 +87,18 @@ submit {
 
 /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    height: 100%;
+    width: 0;
+    opacity: 0.5;
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgb(206, 164, 124); /* Black*/
+    background-color: #14213d;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    padding-top: 60px;
+    transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
+    line-height:14pt;
 }
   
   /* The navigation menu links */
