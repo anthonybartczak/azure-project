@@ -25,14 +25,12 @@
 
         function openNav() {
             document.getElementById("mySidenav").style.width = "450px";
-            document.getElementById("mySidenav").style.opacity = "1";
-            document.getElementById("mySidenav").style.backgroundColor = "#9a8c98";
+            document.getElementById("mySidenav").style.backgroundColor = "#79a7d3";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("mySidenav").style.opacity = "0.4";
-            document.getElementById("mySidenav").style.backgroundColor = "#14213d";
+            document.getElementById("mySidenav").style.backgroundColor = "#79a7d3";
         }
 
         $(document).ready(function(){
@@ -118,7 +116,7 @@
             <h1 class="ml12"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         {% endfor %}
     </div>
-    <body style="background-color:#f2e9e4;">
+    <body style="background-color:#85427d2a;">
         <div class="page-header">
             {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
@@ -129,7 +127,7 @@
                 data-period="2000"
                 data-rotate='[ "This is your SQF source.", "This is my Django blog.", "This is your Python source."]'></span>
             </h1></a>
-            <h4><span onclick="openNav()">Table of contents</a></span>
+            <h4 href="javascript:void(0)"><span onclick="openNav()">Table of contents</a></span>
         </div>
         <div class="container d-flex">
             <div class="row d-flex justify-content-center">

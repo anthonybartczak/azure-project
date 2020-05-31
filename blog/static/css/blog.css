@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #22223b;
+    background-color: #6883bc;
     margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
@@ -95,35 +95,79 @@ submit {
 .sidenav {
     height: 100%;
     width: 0;
-    opacity: 0.5;
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #14213d;
+    background-color: #79a7d3;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px;
     transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
     line-height:14pt;
+    animation-delay: 3s;
+    white-space: nowrap
 }
   
   /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 0px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
     display: block;
-    transition: 0.3s;
 }
-  
-  /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+
+.menudate {
+    padding: 0px 8px 10px 32px;
+    text-decoration: none;
+    font-size: 8px;
+    color: #e0e0e0;
+    display: block;
 }
-  
+
+.ml12 a:hover {
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+}
+    
+@keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+} 
+
   /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -136,8 +180,7 @@ submit {
     transition: margin-left .5s;
     padding: 20px;
 }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
