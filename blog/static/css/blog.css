@@ -60,12 +60,11 @@ h4 {
 }
 
 .post {
-    -webkit-box-shadow: 0px -1px 14px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px -1px 14px -1px rgba(0,0,0,0.75);
     background-color: #e5e5e5;
     margin-bottom: 35px;
-    object-fit: fill;
     padding: 15;
+    -webkit-box-shadow: 60% rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 14px -1px rgba(0,0,0,0.75);
 }
 
 .post h2 a, .post h1 a:visited {
@@ -123,6 +122,11 @@ submit {
     font-size: 8px;
     color: #e0e0e0;
     display: block;
+}
+
+.ml12 {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .ml12 a:hover {
