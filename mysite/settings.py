@@ -46,9 +46,7 @@ CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar':'full',
-        'extraPlugins': ','.join(
-            ['codesnippet',]
-        ),
+        'extraPlugins': ','.join(['codesnippet', 'youtube']),
     },
 }
 
