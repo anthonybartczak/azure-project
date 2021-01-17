@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #6883bc;
+    background-color: #0081A7;
     margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
@@ -60,7 +60,7 @@ h4 {
 }
 
 .post {
-    background-color: #e5e5e5;
+    background-color: #eeeeeece;
     margin-bottom: 35px;
     padding: 15;
     -webkit-box-shadow: 60% rgba(0,0,0,0.75);
