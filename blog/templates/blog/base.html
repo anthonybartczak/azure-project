@@ -24,13 +24,13 @@
         }
 
         function openNav() {
-            document.getElementById("mySidenav").style.width = "500px";
-            document.getElementById("mySidenav").style.backgroundColor = "#79a7d3";
+            document.getElementById("mySidenav").style.width = "400px";
+            document.getElementById("mySidenav").style.backgroundColor = "#0964BD";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("mySidenav").style.backgroundColor = "#79a7d3";
+            document.getElementById("mySidenav").style.backgroundColor = "#0964BD";
         }
 
         $(document).ready(function(){
@@ -110,24 +110,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <title>Canadian's blog</title>
     </head>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        {% for post in posts %}
-            <h1 class="ml12"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-        {% endfor %}
-    </div>
     <body style="background-color:#ffffff;">
         <div class="page-header">
-            {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            {% endif %}
+            <h4 class="glyphicon glyphicon-list" onclick="openNav()"></h4>
             <h1><a href="/">Hi. 
             <span
                 class="txt-rotate"
                 data-period="2000"
                 data-rotate='[ "This is your SQF source.", "This is your music source.", "This is your Python source."]'></span>
-            </h1></a>
-            <h4 href="javascript:void(0)"><span onclick="openNav()">Table of contents</a></span>
+            </a></h1>
+            
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            {% for post in posts %}
+                <!-- <h1 class="ml12"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1> -->
+            {% endfor %}
         </div>
         <div class="container d-flex">
             <div class="row d-flex justify-content-center">
@@ -137,5 +135,8 @@
                 </div>
             </div>
         </div>
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        {% endif %}
     </body>
 </html>
