@@ -61,10 +61,11 @@ h4 {
 
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #000000;
-    position:relative;
+    float: left;
     font-size: 26pt;
-    bottom:0;
-    right:0;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-decoration: none;
 }
 
 .post {
@@ -105,19 +106,29 @@ submit {
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
-    left: 0;
+    right: 0;
     background-color: #79a7d3;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px;
-    transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 2s; /* 0.5 second transition effect to slide in the sidenav */
     line-height:14pt;
-    animation-delay: 3s;
+    animation-delay: 2s;
     white-space: nowrap
 }
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 50px;
+}
   
-  /* The navigation menu links */
+/* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 0px 32px;
+    padding-right: 8px;
+    padding-left: 32px;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
@@ -176,15 +187,6 @@ submit {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     }
-} 
-
-  /* Position and style the close button (top right corner) */
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
