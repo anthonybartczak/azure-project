@@ -5,7 +5,7 @@ SERVER_NAME = str(input('SERVER_NAME: '))
 DB_NAME = str(input('DB_NAME: '))
 ADMIN_USER = str(input('ADMIN_USER: '))
 ADMIN_PASSWORD = str(input('ADMIN_PASSWORD: '))
-PLAN_NAME = str(input('PLANE_NAME: '))
+PLAN_NAME = str(input('PLAN_NAME: '))
 
 create_postgre = 'az postgres up --resource-group ' + RESOURCE_GROUP_NAME + \
     ' --location westeurope ' + \
